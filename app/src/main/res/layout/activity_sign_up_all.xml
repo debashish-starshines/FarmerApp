@@ -1,0 +1,174 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg"
+    >
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_new_5th_april"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up as"
+            android:textColor="#268326"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#9a126b2d"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:onClick="farmeroption"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Farmer"
+                android:textColor="#fff"
+
+                android:gravity="center"
+                android:textSize="13sp"
+              />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#9a126b2d"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:onClick="businessoption"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Business"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#9a126b2d"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:onClick="admin_manageroption"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Admin/Manager"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#9a126b2d"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:onClick="resourcepersonoption"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Extension Officer"
+            android:textColor="#fff"
+
+            android:gravity="center"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#9a126b2d"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:onClick="studentresearcheroption"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Student/Researcher"
+                android:textColor="#fff"
+
+                android:gravity="center"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#9a126b2d"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:onClick="guestoption"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Guest User"
+                android:textColor="#fff"
+
+                android:gravity="center"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+
+            android:layout_weight="1">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

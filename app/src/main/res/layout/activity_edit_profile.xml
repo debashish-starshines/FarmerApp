@@ -1,0 +1,1843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/watermark_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context="ratnatech.farmerapp.Login">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:title="Edit Profile- Farmer"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutmachinetool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="own Machine and tools"/>
+
+            <RadioGroup
+                android:id="@+id/rgMachineTool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMachineryToolsYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="18sp"/>
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonMachineryToolsNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="18sp"/>
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutcheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+
+               android:weightSum="2"
+               >
+               <Button
+                    android:id="@+id/tractorID"
+                   android:layout_width="0dip"
+                   android:layout_height="match_parent"
+                   android:layout_margin="5dp"
+                   android:text="Tractor"
+                   android:layout_weight="1"
+                   android:textColor="#fff"
+                   android:background="@color/colorPrimary"
+                   android:textSize="13sp"
+                
+                   android:checked="false"
+
+
+                   />
+               <Button
+                    android:id="@+id/powertillerID"
+                   android:layout_width="0dip"
+                   android:layout_height="match_parent"
+                   android:layout_margin="5dp"
+                   android:text="Power Tiller"
+                   android:textColor="#fff"
+                   android:background="@color/colorPrimary"
+                   android:textSize="13sp"
+                   android:layout_weight="1"
+                
+                   android:checked="false"
+
+
+                   />
+           </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+             
+                android:weightSum="2"
+                >
+            <Button
+                android:id="@+id/rotavatorID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Rotavator"
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+                android:layout_weight="1"
+             
+                android:checked="false"
+
+                />
+
+            <Button
+
+                android:id="@+id/ploughID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Plough"
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+                android:layout_weight="1"
+             
+                android:checked="false"
+
+
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+            <Button
+
+                android:id="@+id/ridgerID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Ridger"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+             
+                android:checked="false"
+
+                />
+            <Button
+
+                android:id="@+id/levellerID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Leveller"
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+                android:layout_weight="1"
+
+             
+                android:checked="false"
+
+
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+            <Button
+                android:id="@+id/seeddrillID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Seed drill"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+             
+                android:checked="false"
+
+                />
+            <Button
+                android:id="@+id/transplanterID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Transplanter"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textSize="13sp"
+                android:layout_weight="1"
+             
+                android:checked="false"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+            <Button
+                android:id="@+id/weederID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Weeder"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+             
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:checked="false"
+                />
+
+            <Button
+                android:id="@+id/sprayerID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Sprayer"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+             
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:checked="false"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+            <Button
+                android:id="@+id/reaperID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Reaper"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+             
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:checked="false"
+                />
+
+            <Button
+                android:id="@+id/thresherID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Thresher"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+             
+                android:checked="false"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+            <Button
+                android:id="@+id/cleanerID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Cleaner"
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+                android:layout_weight="1"
+             
+                android:checked="false"
+                />
+
+            <Button
+                android:id="@+id/graderID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Grader"
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+                android:layout_weight="1"
+             
+                android:checked="false"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+            <Button
+                android:id="@+id/combineID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Combine"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+             
+                android:layout_weight="1"
+                android:checked="false"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/pumpsID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Pumps"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+                android:layout_weight="1"
+             
+                android:layout_margin="5dp"
+                android:checked="false"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+            <Button
+                android:id="@+id/parboilingunitID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Parboiling Unit"
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+                android:layout_weight="1"
+             
+                android:checked="false"
+                />
+            <Button
+                android:id="@+id/ricemillID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Rice mill"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textSize="13sp"
+                android:layout_weight="1"
+             
+                android:checked="false"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+            <Button
+                android:id="@+id/decorticatorID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="Decorticator"
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:textSize="13sp"
+             
+                android:layout_weight="1"
+                android:checked="false"
+                />
+
+
+            <Button
+            android:id="@+id/toolfruitvegID"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:text="Tools for fruit and vegetable"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+            android:textSize="13sp"
+                android:layout_margin="5dp"
+         
+                android:layout_weight="1"
+            android:checked="false"
+            />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/othersID"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:text="Others"
+                    android:textColor="#fff"
+                    android:background="@color/colorPrimary"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                 
+                    android:layout_margin="5dp"
+                    android:checked="false"
+                    />
+                <Button
+
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:background="@color/colorPrimary"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                 
+                    android:layout_margin="5dp"
+                    android:checked="false"
+                    android:visibility="invisible"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/machinesTools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="Machine and tools that are owned "/>
+            <TextView
+                android:id="@+id/owned_machines_tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:text=""/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="Select Machine and tools that you own "/>
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tractor" />
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Power Tiller" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Rotavator" />
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Plough" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Ridger" />
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Leveller" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Seed Drill" />
+                <CheckBox
+                    android:id="@+id/checkBox8"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Transplanter" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox9"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Weeder" />
+                <CheckBox
+                    android:id="@+id/checkBox10"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Sprayer" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox11"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Reaper" />
+                <CheckBox
+                    android:id="@+id/checkBox12"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Thresher" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox13"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cleaner" />
+                <CheckBox
+                    android:id="@+id/checkBox14"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Grader" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox15"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Combine" />
+                <CheckBox
+                    android:id="@+id/checkBox16"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Pumps" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox17"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Parboiling Unit" />
+                <CheckBox
+                    android:id="@+id/checkBox18"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Rice Mill" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox19"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Decorticator" />
+                <CheckBox
+                    android:id="@+id/checkBox20"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tools for fruits and vegetable" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox21"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Others" />
+                <CheckBox
+                    android:id="@+id/checkBox22"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#bcbcbc"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/rectangle_border"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="Last crop grown in"/>
+
+
+
+            <Spinner
+                android:id="@+id/spinner_rabi_kharif"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:entries="@array/array_rabi_kharif"
+                android:background="#331ad71a"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#bcbcbc"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:text="Area (in acres)"/>
+
+
+
+            <Spinner
+                android:id="@+id/spinner_in_acres"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:entries="@array/array_in_acres"
+                android:background="#331ad71a"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#bcbcbc"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:text="Soil testing done"/>
+            <RadioGroup
+                android:id="@+id/radioGroupSoilTesting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+
+                    android:id="@+id/radioButtonSoilTestingDoneYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="14sp"/>
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonSoilTestingDoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="14sp"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:text="Crop"/>
+
+            <Spinner
+                android:id="@+id/spinner_crop"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:entries="@array/array_crop"
+                android:background="#331ad71a"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#bcbcbc"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:text="Seed, Seedling Variety"/>
+
+            <Spinner
+                android:id="@+id/spinner_seedling_variety"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:entries="@array/array_seedling_variety"
+                android:background="#331ad71a"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#bcbcbc"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:text="Fertiliser Used"/>
+
+            <RadioGroup
+                android:id="@+id/rgFertiliserUsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonFertilisersUsedYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="14sp"/>
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonFertilisersUsedNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="14sp"/>
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:text="Pesticides Used"/>
+
+            <RadioGroup
+                android:id="@+id/rgPesticideUsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonPesticidesUsedYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="14sp"/>
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonPesticidesUsedNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="14sp"/>
+
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:text="Machines Used"/>
+
+            <RadioGroup
+                android:id="@+id/rgMachinesUsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonOwnMachineUsed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Own"
+                    android:textSize="14sp"/>
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonOnHireMachinesUsed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="On Hire"
+                    android:textSize="14sp"/>
+
+
+            </RadioGroup>
+
+
+            <Spinner
+                android:id="@+id/spinner_machine_tool_rabikharif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/array_machine_tool"
+                android:background="#331ad71a"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#bcbcbc"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:text="Covered by insurance"/>
+
+            <RadioGroup
+                android:id="@+id/rgCoveredByInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonInsuranceYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="14sp"/>
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonInsuranceNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="14sp"/>
+
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:text="Loan Taken"/>
+
+            <RadioGroup
+                android:id="@+id/rgLoanTaken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonLoanTakenYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="14sp"/>
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonLoanTakenNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="14sp"/>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutspecialcrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_border"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Any special crop grown"/>
+
+            <RadioGroup
+                android:id="@+id/rgSpecialCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonSpecialCropGrownYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="18sp"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerspecialcrop"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:entries="@array/arrayspecialcrop"
+                        android:background="#331ad71a"
+                        />
+
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonSpecialCropGrownNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="18sp"/>
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle_border"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Fishery Activity"/>
+
+            <RadioGroup
+                android:id="@+id/rgFishery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/fyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:id="@+id/yesfisherylayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:text="Area of pond"/>
+                        <EditText
+                            android:id="@+id/edittextfisheryareaoffpond"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/rectangle_border"
+                            android:paddingLeft="6dp"
+                            android:hint="(in acres)"/>
+                        <RadioGroup
+                            android:id="@+id/rgOwnLease"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/own"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Own"
+                                android:textSize="18sp"/>
+
+                            <RadioButton
+                                android:id="@+id/lease"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lease"
+                                android:textSize="18sp"/>
+
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fingerling from"
+                            android:layout_marginTop="10dp"
+                            android:textAllCaps="true"
+                            />
+
+                        <Spinner
+                            android:id="@+id/spinnerfingerlingfrom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/fingerlingarray"
+                          android:background="#331ad71a"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:text="TRAINED FOR FARMING"/>
+
+                        <RadioGroup
+                            android:id="@+id/rgftrain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/ftyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                android:textSize="18sp"/>
+
+                            <RadioButton
+                                android:id="@+id/ftno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:textSize="18sp"/>
+
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:text="medicine used"/>
+
+                        <RadioGroup
+                            android:id="@+id/rgmedicine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/myes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                android:textSize="18sp"/>
+
+                            <RadioButton
+                                android:id="@+id/mno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:textSize="18sp"/>
+
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:text="loan taken"/>
+
+                        <RadioGroup
+                            android:id="@+id/rgloan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/lyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                android:textSize="18sp"/>
+
+                            <Spinner
+                                android:id="@+id/spinner_lone_taken_for"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/arrayloanfor"
+                                android:background="#331ad71a"/>
+
+
+
+
+                            <RadioButton
+                                android:id="@+id/lno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:textSize="18sp"/>
+
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <RadioButton
+                    android:id="@+id/fno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="No"
+                    android:textSize="18sp"/>
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutfveterinary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/rectangle_border"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Veterinary Activity"/>
+            <RadioGroup
+                android:id="@+id/rgfveterinary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/vyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="18sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/yeslayoutvactivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rectangle_border"
+                    android:visibility="visible"
+                    >
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Animal type:"/>
+
+
+                        <TextView
+                            android:id="@+id/txtanimaltype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Animal type"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Animal number:"/>
+
+
+                        <TextView
+                            android:id="@+id/txtanimalnumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Animal Number"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Animal variety:"/>
+
+
+                        <TextView
+                            android:id="@+id/txtanimalvariety"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Animal Variety"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/layoutanimal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                            <CheckBox
+                                android:id="@+id/cowID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cow"
+                                android:layout_weight="1"
+                                android:textColor="#44f"
+                                android:textSize="15sp"
+                                android:checked="false"
+
+
+                                />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <EditText
+                                android:id="@+id/no_of_cows"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:paddingLeft="7dp"
+                                android:hint="Number of cows"
+                                android:textSize="13sp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectangle_border"
+                                android:maxLength="2"/>
+
+                            <EditText
+                                android:id="@+id/variety_of_cows"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:hint="Variety of cows"
+                                android:paddingLeft="7dp"
+                                android:layout_weight="1"
+                                android:textSize="13sp"
+                                android:inputType="text"
+                                android:background="@drawable/rectangle_border"
+                                />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/goatID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Goat"
+                            android:layout_weight="1"
+                            android:textColor="#44f"
+                            android:textSize="15sp"
+                            android:checked="false"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <EditText
+                                android:id="@+id/no_of_goat"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:paddingLeft="7dp"
+                                android:hint="Number of goat"
+                                android:textSize="13sp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectangle_border"
+                                android:maxLength="2"/>
+
+                            <EditText
+                                android:id="@+id/variety_of_goat"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:hint="Variety of goat"
+                                android:paddingLeft="7dp"
+                                android:layout_weight="1"
+                                android:textSize="13sp"
+                                android:inputType="text"
+                                android:background="@drawable/rectangle_border"
+                                />
+                        </LinearLayout>
+
+
+
+                        <CheckBox
+                            android:id="@+id/chickID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Chick"
+                            android:layout_weight="1"
+                            android:textColor="#44f"
+                            android:textSize="15sp"
+                            android:checked="false"
+
+
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <EditText
+                                android:id="@+id/no_of_chick"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:paddingLeft="7dp"
+                                android:hint="Number of chick"
+                                android:textSize="13sp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectangle_border"
+                                android:maxLength="2"/>
+
+                            <EditText
+                                android:id="@+id/variety_of_chick"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:hint="Variety of chick"
+                                android:paddingLeft="7dp"
+                                android:layout_weight="1"
+                                android:textSize="13sp"
+                                android:inputType="text"
+                                android:background="@drawable/rectangle_border"
+                                />
+                        </LinearLayout>
+                        <CheckBox
+                            android:id="@+id/otherID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Other"
+                            android:layout_weight="1"
+                            android:textColor="#44f"
+                            android:textSize="15sp"
+                            android:checked="false"
+
+
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <EditText
+                                android:id="@+id/no_of_other_animal"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:paddingLeft="7dp"
+                                android:hint="Number of other animal"
+                                android:textSize="13sp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectangle_border"
+                                android:maxLength="2"/>
+
+                            <EditText
+                                android:id="@+id/variety_of_other_animal"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:hint="Variety of other animal"
+                                android:paddingLeft="7dp"
+                                android:layout_weight="1"
+                                android:textSize="13sp"
+                                android:inputType="text"
+                                android:background="@drawable/rectangle_border"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutfinsurance"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:text="Covered By Insurance"/>
+
+                        <RadioGroup
+                            android:id="@+id/rgvinsurance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/viyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                android:textSize="18sp"/>
+
+
+
+
+                            <RadioButton
+                                android:id="@+id/vino"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:textSize="18sp"/>
+
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:text="loan taken"/>
+
+                        <RadioGroup
+                            android:id="@+id/rgveterinary_lone_taken"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/vlyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                android:textSize="18sp"/>
+
+
+                                <Spinner
+                                    android:id="@+id/spinner_veterinary_loan_taken_for"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:entries="@array/arrayloanveterinary"
+                                    android:background="#331ad71a"
+                                    />
+
+
+                            <RadioButton
+                                android:id="@+id/vlno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:textSize="18sp"/>
+
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:text="TRAINED FOR FARMING"/>
+
+                        <RadioGroup
+                            android:id="@+id/rgveterinary_trained_for_farming"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/vtrainedforfarmingyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                android:textSize="18sp"/>
+
+
+
+                            <RadioButton
+                                android:id="@+id/vtrainedforfarmingno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:textSize="18sp"/>
+
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:text="MEDICINE USED"/>
+
+                        <RadioGroup
+                            android:id="@+id/rgveterinary_medicine_used"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/vmedicineusedyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                android:textSize="18sp"/>
+
+
+
+                            <RadioButton
+                                android:id="@+id/vmedicineusedno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:textSize="18sp"/>
+
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/vno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="18sp"/>
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:text="UPDATE"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:onClick="onClickUpdate"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

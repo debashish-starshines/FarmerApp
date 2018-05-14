@@ -1,0 +1,192 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/watermark_bg"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="Agril product Sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/paddyID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Paddy"
+                        android:layout_weight="1"
+                        android:textColor="#44f"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:checked="false"
+                        android:onClick="onClickPaddy"
+
+                        />
+                    <Button
+                        android:id="@+id/greengramID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Green Gram"
+                        android:textColor="#44f"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:checked="false"
+
+                        android:onClick="onClickGreenGram"
+                        />
+
+
+
+                    <Button
+                        android:id="@+id/blackgramID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="BLack Gram "
+                        android:textColor="#44f"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:checked="false"
+                        android:onClick="onClickBlackGram"
+                        />
+
+                    <Button
+
+                        android:id="@+id/mustardID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Mustard"
+                        android:textColor="#44f"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:checked="false"
+                        android:onClick="onClickMustard"
+
+                        />
+
+                    <Button
+
+                        android:id="@+id/groundnutID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Groundnut"
+                        android:textColor="#44f"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:checked="false"
+                        android:onClick="onClickGroundnut"
+
+                        />
+
+                    <Button
+
+                        android:id="@+id/vegetableID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Vegetable"
+                        android:textColor="#44f"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:checked="false"
+                        android:onClick="onClickVegetable"
+
+                        />
+                    <Button
+
+                        android:id="@+id/fruitID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Fruit"
+                        android:textColor="#44f"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:checked="false"
+                        android:onClick="onClickFruit"
+
+                        />
+                    <Button
+
+                    android:id="@+id/flowerID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Flower"
+                    android:textColor="#44f"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:checked="false"
+                    android:onClick="onClickFlower"
+
+                    />   <Button
+
+                    android:id="@+id/othersID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Others"
+                    android:textColor="#44f"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:checked="false"
+                    android:onClick="onClickOthers"
+
+                    />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

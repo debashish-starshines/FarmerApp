@@ -1,0 +1,76 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/watermark_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="ratnatech.farmerapp.Fragment.Ask">
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="212px"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/agrilproduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/agriproduct1"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/machinery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/machinery1"
+                android:scaleType="fitXY"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/veterinaryitem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/veterinaryitem1"
+                android:scaleType="fitXY"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="212px"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/fishery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fishery"
+                android:scaleType="fitXY"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/other"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/others"
+                android:scaleType="fitXY"
+                android:layout_weight="1"/>
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/purchase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Soil conservation and Watershed"
+                android:textColor="#fff"
+                android:background="#546"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,123 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/watermark_bg"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="Veterinary Item"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/cowID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Cow"
+                        android:layout_weight="1"
+                        android:textColor="#44f"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:checked="false"
+                        android:onClick="onClickCow"
+
+                        />
+                    <Button
+                        android:id="@+id/chickID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Chick"
+                        android:textColor="#44f"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:checked="false"
+
+                        android:onClick="onClickChick"
+                        />
+
+
+
+                    <Button
+                        android:id="@+id/goatID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Goat"
+                        android:textColor="#44f"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:checked="false"
+                        android:onClick="onClickGoat"
+                        />
+
+                    <Button
+
+                        android:id="@+id/buffaloID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Buffalo"
+                        android:textColor="#44f"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:checked="false"
+                        android:onClick="onClickBuffalo"
+
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

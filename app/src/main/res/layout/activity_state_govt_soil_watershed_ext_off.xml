@@ -1,0 +1,281 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/watermark_bg"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="StateGovt Dept(Soil Conversation and Watershed)"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="POST"
+                        android:textSize="12sp"/>
+
+                    <RadioGroup
+                        android:id="@+id/rgSoilConserWatershedPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PIA"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            />
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ASCO"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            />
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="AAE"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            />
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="WMT"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            />
+
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TE"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            />
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="LST"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            />
+
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Others"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            />
+
+
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="12sp"
+                        android:text="JURISDICTION"/>
+                    <EditText
+                        android:id="@+id/jurisdiction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rectangle_border"
+                        android:textSize="14sp"
+                        android:paddingLeft="5dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="12sp"
+                        android:text="SELECT DISTRICT"/>
+                    <Spinner
+                        android:id="@+id/district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:background="#bcbcbc"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="12sp"
+                        android:text="SELECT BLOCK"/>
+                    <Spinner
+                        android:id="@+id/block"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:background="#bcbcbc"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="12sp"
+                        android:text="SELECT GP"/>
+                    <Spinner
+                        android:id="@+id/gp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:background="#bcbcbc"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:text="EXPERTISES IN"/>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Livelihood"
+                            android:gravity="center"
+                            android:layout_margin="2dp"
+
+
+                            android:layout_weight="1"/>
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Micro enterprise"
+                            android:gravity="center"
+                            android:layout_margin="2dp"
+
+
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="NRM"
+                            android:gravity="center"
+                            android:layout_margin="2dp"
+
+
+                            android:layout_weight="1"/>
+                        <CheckBox
+                            android:id="@+id/checkBox4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Training"
+
+                            android:layout_margin="2dp"
+                            android:gravity="center"
+
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:text="SUBMIT"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:onClick="onClickSubmit"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

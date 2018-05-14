@@ -1,0 +1,666 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/watermark_bg"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="Edit Profile Admin,Manager"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColorHint="#b9101010">
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="NAME"
+                                    android:textSize="13sp"
+                                    android:singleLine="true"
+                                    android:enabled="false"
+                                    />
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textColorHint="#b9101010">
+
+                                    <com.hbb20.CountryCodePicker
+                                        android:id="@+id/cpp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+                                </android.support.design.widget.TextInputLayout>
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="#b9101010">
+
+                                    <android.support.v7.widget.AppCompatEditText
+                                        android:id="@+id/input_mob_no"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="MOBILE"
+                                        android:maxLength="10"
+                                        android:inputType="number"
+                                        android:textSize="13sp"
+                                        android:enabled="false"
+                                        android:singleLine="true"
+                                        android:textColor="@android:color/black"/>
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        >
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#b9101010">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_pass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:inputType="textPassword"
+                                android:hint="PASSWORD"
+                                android:enabled="false"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        >
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#b9101010">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="EMAIL (OPTIONAL)"
+                                android:textSize="13sp"
+                                android:enabled="false"
+                                android:inputType="textEmailAddress"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/post_hold_govt_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="GOVT TYPE"
+                            android:textSize="13sp"
+
+                            />
+                        <Spinner
+                            android:id="@+id/spinner_adminmanager_posthold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:entries="@array/array_adminmanager_posthold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#bcbcbc"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:id="@+id/layout_id_stategovt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/post_hold_stategovt_dept"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="DEPARTMENT"
+                            android:textSize="13sp"
+
+                            />
+                        <Spinner
+                            android:id="@+id/spinner_adminmanager_posthold_stategovt_dept"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:entries="@array/array_adminmanager_posthold_stategovt_dept"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#bcbcbc"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:padding="10dp"
+                            android:background="@drawable/rectangle_border"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CURRENT POST"
+                                android:textColor="@color/colorPrimary"
+                                />
+                            <TextView
+                                android:id="@+id/getPost"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="AEE"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/posttext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="SELECT NEW POST"
+                            android:textSize="13sp"
+                            android:layout_marginTop="20dp"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/layout_agriculture"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+
+
+                            <RadioGroup
+                                android:visibility="gone"
+                                android:id="@+id/radioGroupPostAgriculture"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="AEE"
+
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="EE"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="DE"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JDA(Engg)"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="SE"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="CE"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="DDA"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JDA"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="ADA"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Director"
+                                    android:textSize="18sp"/>
+
+
+                            </RadioGroup>
+
+
+                            <RadioGroup
+                                android:visibility="gone"
+                                android:id="@+id/radioGroupPostHorticulture"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="ADH"
+
+
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="DDH"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JDH"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Director"
+                                    android:textSize="18sp"/>
+
+
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:visibility="gone"
+                                android:id="@+id/radioGroupPostSoilConservation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="EE"
+
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JD"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Director"
+                                    android:textSize="18sp"/>
+
+
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:visibility="gone"
+                                android:id="@+id/radioGroupPostVeterinary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="CDVO"
+
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Joint Director"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Director"
+                                    android:textSize="18sp"/>
+
+
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:visibility="gone"
+                                android:id="@+id/radioGroupPostFishery"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Dist Fishery Officer"
+                                    android:textSize="18sp"
+
+                                    />
+
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="DDF"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JDF"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="ADF"
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Director"
+                                    android:textSize="18sp"/>
+
+
+
+
+
+                            </RadioGroup>
+                            <LinearLayout
+                                android:id="@+id/layoutdistrictjuris"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <EditText
+                                    android:id="@+id/editJurisdiction"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="14dp"
+                                    android:hint="Jurisdiction"
+                                    android:textStyle="italic"
+                                    android:paddingLeft="5dp"
+                                    android:background="@drawable/rectangle_border"
+                                    android:textSize="14sp"/>
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="SELECT DISTRICT"
+                                    android:textSize="13sp"
+                                    android:layout_marginTop="20dp"
+                                    />
+                                <Spinner
+                                    android:id="@+id/district"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:enabled="false"
+                                    android:entries="@array/array_district"/>
+
+                                <LinearLayout
+                                    android:id="@+id/line"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#bcbcbc"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--LAYOUT CENTRAL GOVT-->
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/layout_id_centgovt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <TextView
+                            android:layout_marginTop="14dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="POST"/>
+
+                        <EditText
+                            android:id="@+id/editSpecifyPost"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:hint="Please Specify Post"
+                            android:textStyle="italic"
+                            android:paddingLeft="5dp"
+                            android:background="@drawable/rectangle_border"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_marginTop="14dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="INSTITUTION"/>
+                        <EditText
+                            android:id="@+id/editSpecifyInstitution"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:enabled="false"
+                            android:paddingLeft="5dp"
+                            android:hint="Please Specify Institution"
+                            android:textStyle="italic"
+                            android:background="@drawable/rectangle_border"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_marginTop="14dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="JURISDICTION"/>
+                        <EditText
+                            android:id="@+id/editCGJurisdiction"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:paddingLeft="5dp"
+                            android:hint="Jurisdiction"
+                            android:textStyle="italic"
+                            android:background="@drawable/rectangle_border"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_marginTop="14dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SELECT DISTRICT"/>
+
+                        <Spinner
+                            android:id="@+id/districtCG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/array_district"
+                            android:enabled="false"
+                            />
+                        <LinearLayout
+                            android:id="@+id/line2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#bcbcbc"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:text="UPDATE"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:onClick="onClickUpdate"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

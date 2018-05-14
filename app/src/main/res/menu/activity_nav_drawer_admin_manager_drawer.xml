@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/message"
+            android:icon="@drawable/message"
+            android:title="Message" />
+
+        <item
+            android:id="@+id/openforum"
+            android:icon="@drawable/message"
+            android:title="Open Forum" />
+
+        <item
+            android:id="@+id/report"
+            android:icon="@drawable/message"
+            android:title="Get Report" />
+
+        <item
+            android:id="@+id/survey"
+            android:icon="@android:drawable/ic_input_get"
+            android:title="Conduct Survey" />
+
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/my_activities"
+            android:title="Contact us" />
+
+        <item
+            android:id="@+id/knowledgebank"
+            android:icon="@drawable/my_activities"
+            android:title="Knowledge Bank" />
+    </group>
+
+
+
+</menu>

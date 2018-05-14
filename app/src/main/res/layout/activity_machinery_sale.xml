@@ -1,0 +1,255 @@
+<ScrollView android:id="@+id/layout_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/watermark_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        tools:context="ratnatech.farmerapp.Fragment.Ask">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/MyDarkToolbarStyle"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            />
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="TRACTOR"
+                android:onClick="TRACTOR"
+                android:textSize="15sp"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="POWER TILLER"
+                android:onClick="POWERTILLER"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Rotavator"
+                android:onClick="Rotavator"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Plough"
+                android:onClick="Plough"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Ridger"
+                android:onClick="Ridger"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Leveller"
+                android:onClick="Leveller"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="seed drill"
+                android:onClick="seeddrill"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="transplanter"
+                android:onClick="transplanter"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="weeder"
+                android:onClick="weeder"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Sprayer"
+                android:onClick="Sprayer"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Reaper"
+                android:onClick="Reaper"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Thresher"
+                android:onClick="Thresher"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Cleaner"
+                android:onClick="Cleaner"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Grader"
+                android:onClick="Grader"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Combine"
+                android:onClick="Combine"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Pumps"
+                android:onClick="Pumps"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Parboiling unit"
+                android:onClick="Parboilingunit"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="rice mill"
+                android:onClick="ricemill"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Decorticator"
+                android:onClick="Decorticator"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Tools for fruit and vegetable"
+                android:onClick="Toolsforfruitandvegetable"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="others"
+                android:onClick="others"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,614 @@
+<resources>
+    <string name="app_name">Odisha Krushi</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="qna" formatted="false">Q &amp; A / </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string-array name="spinnerarray">
+        <item>Vegetable</item>
+        <item>Fruit</item>
+        <item>Flower</item>
+        <item>Mushroom</item>
+        <item>Cereal</item>
+        <item>Pulses</item>
+        <item>Oilseed</item>
+        <item>Spices</item>
+        <item>Cotton Sugarcane</item>
+        <item>Fodder</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="machinetoolsarray">
+        <item>Tractor</item>
+        <item>Power tiller</item>
+        <item>Rotavator</item>
+        <item>Plough</item>
+        <item>Ridger</item>
+        <item>Leveller</item>
+        <item>seed drill</item>
+        <item>transplanter</item>
+        <item>weeder</item>
+
+        <item>Sprayer</item>
+        <item>Reaper</item>
+        <item>Thresher</item>
+        <item>Cleaner</item>
+        <item>Grader</item>
+        <item>Combine</item>
+        <item>Pumps</item>
+        <item>Parboiling unit</item>
+        <item>rice mill</item>
+
+        <item>Decorticator</item>
+        <item>Tools for fruit and vegetable</item>
+        <item>others</item>
+    </string-array>
+
+
+    <string-array name="arrayasksoilcw">
+        <item>Livelihood</item>
+        <item>Micro enterprise</item>
+        <item>NRM</item>
+        <item>Training</item>
+
+    </string-array>
+
+    <string-array name="veterinaryarray">
+        <item>Cow</item>
+        <item>Goat</item>
+        <item>Chick</item>
+        <item>buffalo</item>
+        <item>others</item>
+    </string-array>
+
+    <string-array name="spinnerdistrict">
+        <item>Select Your District</item>
+        <item>Angul</item>
+        <item>Boudh</item>
+        <item>Balangir</item>
+        <item>Bargarh</item>
+        <item>Balasore</item>
+        <item>Bhadrak</item>
+        <item>Cuttack</item>
+        <item>Deogarh</item>
+        <item>Dhenkanal</item>
+        <item>Ganjam</item>
+        <item>Gajapati</item>
+        <item>Jharsuguda</item>
+        <item>Jajpur</item>
+        <item>Jagatsinghapur</item>
+        <item>Khordha</item>
+        <item>Keonjhar</item>
+        <item>Kalahandi</item>
+        <item>Kandhamal</item>
+        <item>Koraput</item>
+        <item>Kendrapara</item>
+        <item>Malkangiri</item>
+        <item>Mayurbhanj</item>
+        <item>Nabarangpur</item>
+        <item>Nuapada</item>
+        <item>Nayagarh</item>
+        <item>Puri</item>
+        <item>Rayagada</item>
+        <item>Sambalpur</item>
+        <item>Sonepur</item>
+        <item>Sundergarh</item>
+    </string-array>
+
+    <string-array name="spinnerblock">
+        <item>Select Your Block</item>
+
+
+    </string-array>
+
+    <string-array name="spinnergp">
+        <item>Select Your GP</item>
+
+
+    </string-array>
+
+    <string-array name="spinnervillage">
+        <item>Select Your Village</item>
+        <item>VILL-1</item>
+        <item>VILL-2</item>
+        <item>VILL-3</item>
+
+    </string-array>
+
+
+    <string-array name="spinnerstatus">
+        <!--   <item>Select Your Status</item>-->
+        <item>In-Service</item>
+        <item>Retired</item>
+        <item>Self-employed</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="gpn">
+        <!--   <item>-Select InService Type-</item>-->
+        <item>Govt</item>
+        <item>Private</item>
+        <item>NGO</item>
+    </string-array>
+
+
+    <string-array name="cs">
+        <!--  <item>-Select-</item>-->
+        <item>Cent Govt</item>
+        <item>State</item>
+    </string-array>
+
+    <string-array name="je">
+        <!--      <item>-Select-</item>-->
+        <item>Jurisdiction</item>
+        <item>Expertise In</item>
+    </string-array>
+
+
+    <string-array name="array_govt_type">
+        <!--    <item>-Select Govt Type-</item>-->
+        <item>Central Govt</item>
+        <item>State Govt</item>
+    </string-array>
+
+    <string-array name="array_cent_govt_department_type">
+        <!--    <item>-Select Department Type-</item>-->
+        <item>Agriculture</item>
+        <item>Horticulture</item>
+        <item>Soil Conservation</item>
+        <item>Animal Resources</item>
+        <item>Fishery</item>
+        <item>Marketing Related</item>
+    </string-array>
+
+    <string-array name="array_cent_govt_department_type_agriculture_post">
+        <!--    <item>-Select Post Type-</item>-->
+        <item>Krushak Saathi</item>
+        <item>VAW</item>
+        <item>AAO</item>
+        <item>DAO</item>
+        <item>AAE</item>
+        <item>SMS</item>
+        <item>Others Pls specify</item>
+    </string-array>
+
+    <string-array name="array_cent_govt_department_type_horticulture_post">
+        <!--  <item>-Select Post Type-</item>-->
+        <item>AHO</item>
+        <item>AAE</item>
+
+
+    </string-array>
+
+
+    <string-array name="array_cent_govt_department_type_soilconservation_post">
+        <!-- <item>-Select Post Type-</item>-->
+        <item>ASCO</item>
+        <item>AAE</item>
+
+    </string-array>
+
+    <string-array name="array_cent_govt_department_type_animalresources_post">
+        <!--  <item>-Select Post Type-</item>-->
+        <item>BVO</item>
+        <item>SDVO</item>
+    </string-array>
+
+
+    <string-array name="array_cent_govt_department_type_fishery_post">
+        <!-- <item>-Select Post Type-</item>-->
+        <item>AFO</item>
+        <item>Addl Fishery Officer</item>
+        <item>District Fishery Officer</item>
+        <item>DDF</item>
+        <item>JDF</item>
+        <item>ADF</item>
+        <item>Director</item>
+
+    </string-array>
+
+    <string-array name="array_sub_group_of_cultivation">
+        <!-- <item>-Select Sub Group-</item>-->
+        <item>Vegetable</item>
+        <item>Fruit</item>
+        <item>Mushroom</item>
+        <item>Cereal</item>
+        <item>Pulses</item>
+        <item>Oilseed</item>
+        <item>Spices</item>
+        <item>Cotton sugarcane</item>
+        <item>Fodder for each</item>
+    </string-array>
+
+    <string-array name="array_sub_group_of_machineryandtools">
+        <!--        <item>-Select Sub Group-</item>-->
+        <item>Plowing</item>
+        <item>Levelling</item>
+        <item>Ridging</item>
+        <item>Irrigation</item>
+        <item>Sowing</item>
+        <item>Transplanting</item>
+        <item>Harvesting</item>
+        <item>Flower and Fruit Related</item>
+
+    </string-array>
+
+
+    <string-array name="array_cent_govt_department_type_soilconservation_expertisein_post">
+        <!--  <item>-Select Sub Group-</item>-->
+        <item>Cow</item>
+        <item>Goat</item>
+        <item>Chick</item>
+        <item>Buffalo</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="array_animalresources_subgroup">
+        <!--  <item>-Select Sub Group-</item>-->
+        <item>Cow</item>
+        <item>Goat</item>
+        <item>Chick</item>
+        <item>Buffalo</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="array_cent_govt_department_type_fishery_expertisein_all_subgroup">
+        <!-- <item>-Select Sub Group-</item>-->
+        <item>Prawn</item>
+        <item>Fish</item>
+        <item>Others</item>
+
+    </string-array>
+
+
+    <string-array name="array_expertise_in_private">
+        <!--        <item>-Select Department-</item>-->
+        <item>Agriculture</item>
+        <item>Horticulture</item>
+        <item>Veterinary</item>
+        <item>Fishery</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="array_status_retired_expertisein">
+        <!--<item>-Select Department-</item>-->
+        <item>Agriculture</item>
+        <item>Horticulture</item>
+        <item>Veterinary</item>
+        <item>Fishery</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="array_status_selfemployed_expertisein">
+        <!--   <item>-Select Department-</item>-->
+        <item>Agriculture</item>
+        <item>Horticulture</item>
+        <item>Veterinary</item>
+        <item>Fishery</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="array_business_type">
+        <!--   <item>-Select Business Type-</item>-->
+        <item>Manufacturer</item>
+        <item>Dealer</item>
+        <item>Franchise</item>
+        <item>Service</item>
+
+    </string-array>
+
+    <string-array name="array_deals_in">
+        <!--<item>-Select-</item>-->
+        <item>Agril Machinery/tools/implements</item>
+        <item>Seed</item>
+        <item>Pesticides</item>
+        <item>Fertiliser</item>
+        <item>Medicine and Feed</item>
+    </string-array>
+
+    <string-array name="array_adminmanager_posthold">
+        <!--      <item>-Select-</item>-->
+        <item>State Govt</item>
+        <item>Central Govt</item>
+    </string-array>
+
+    <string-array name="array_adminmanager_posthold_stategovt_dept">
+        <!--   <item>-Select-</item>-->
+        <item>Agriculture</item>
+        <item>Horticulture</item>
+        <item>Soil-conservation</item>
+        <item>Veterinary</item>
+        <item>Fishery</item>
+        <item>Secretary, Agril and Farmers Empowerment</item>
+        <item>Secretary, Animal Resources and Fishery</item>
+    </string-array>
+
+
+    <string-array name="array_district">
+        <!--   <item>-Select District-</item>-->
+        <item>Angul\/Anugul</item>
+        <item>Balangir</item>
+        <item>Balasore-Baleshwar</item>
+        <item>Bargarh</item>
+        <item>Baudh</item>
+
+        <item>Bhadrak</item>
+        <item>Cuttack</item>
+        <item>Deogarh-Debagarh</item>
+        <item>Dhenkanal</item>
+        <item>Gajapati</item>
+        <item>Ganjam</item>
+        <item>Jagatsinghapur</item>
+        <item>Jajpur</item>
+        <item>Jharsuguda</item>
+        <item>Kalahandi</item>
+        <item>Kandhamal</item>
+        <item>Kendrapara</item>
+        <item>Kendujhar</item>
+        <item>Khordha</item>
+        <item>Koraput</item>
+        <item>Malkangiri</item>
+
+        <item>Mayurbhanj</item>
+        <item>Nabarangpur</item>
+        <item>Nayagarh</item>
+        <item>Nuapada</item>
+        <item>Puri</item>
+        <item>Rayagada</item>
+
+
+        <item>Sambalpur</item>
+        <item>Subarnapur</item>
+        <item>Sundargarh</item>
+    </string-array>
+
+
+    <string-array name="fisheryarray">
+
+        <item>Prawn</item>
+        <item>Fish</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="fisherysubgroup">
+
+        <item>Fingerlings</item>
+        <item>Ponds</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="govtschemearray">
+
+        <item>Soil Testing</item>
+        <item>Seed</item>
+        <item>Fertiliser</item>
+        <item>Disease and Pest</item>
+        <item>Irrigation</item>
+        <item>Insurance</item>
+        <item>Training</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="arrayagrilproduct">
+
+        <item>Paddy</item>
+        <item>Green Gram</item>
+        <item>Black Gram</item>
+
+        <item>Mustard</item>
+        <item>Groundnut</item>
+        <item>Vegetable</item>
+
+        <item>Fruit</item>
+        <item>Flower</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="arraymachinerypurchase">
+
+        <item>Tractor</item>
+        <item>Power tiller</item>
+        <item>Thresher</item>
+        <item>Plough</item>
+        <item>Pumps</item>
+        <item>Tools for fruits and vegetable</item>
+        <item>Others</item>
+    </string-array>
+    arrayhire
+
+    <string-array name="arrayhire">
+
+        <item>Tractor</item>
+        <item>Power tiller</item>
+        <item>Thresher</item>
+        <item>Plough</item>
+        <item>Pumps</item>
+        <item>Tools for fruits and vegetable</item>
+        <item>Others</item>
+    </string-array>
+    <string name="title_activity_navdrawer_rp">Resource Person</string>
+    <string name="title_activity_nav_drawer_business">Business</string>
+    <string name="title_activity_nav_drawer_admin_manager">Admin/Manager</string>
+
+
+    <string-array name="array_machine_tool">
+
+        <item>Tractor</item>
+        <item>Power tiller</item>
+        <item>Rotavator</item>
+        <item>Leveller</item>
+        <item>Pumps</item>
+        <item>Reaaper</item>
+        <item>Transplanter</item>
+        <item>Seed Drill</item>
+        <item>Tools for fruit, vegetable and flower</item>
+        <item>others</item>
+    </string-array>
+
+    <string-array name="array_rabi_kharif">
+
+
+        <item>Rabi</item>
+        <item>Kharif</item>
+
+    </string-array>
+
+    <string-array name="array_in_acres">
+
+        <item>1</item>
+        <item>1&#8211;2</item>
+        <item>2&#8211;5</item>
+        <item>more than 5</item>
+
+    </string-array>
+
+    <string-array name="array_crop">
+
+
+        <item>Paddy</item>
+        <item>Wheat</item>
+        <item>Green Gram</item>
+        <item>Black Gram</item>
+        <item>Arhar</item>
+        <item>Vegetable</item>
+        <item>Fruit</item>
+        <item>Flower</item>
+        <item>Cotton</item>
+        <item>Sugarcane</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="array_seedling_variety">
+
+
+        <item>Hybrid</item>
+        <item>Hi-Yielding</item>
+        <item>Local</item>
+
+    </string-array>
+
+
+    <string-array name="array_pondrearingother">
+
+
+        <item>Pond</item>
+        <item>Rearing</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="machinecondition">
+
+
+        <item>Very Good</item>
+        <item>Good</item>
+        <item>Needs Repair</item>
+        <item>Scrap</item>
+    </string-array>
+
+    <string-array name="arrayspecialcrop">
+
+
+        <item>Maize</item>
+        <item>Cotton</item>
+        <item>Palm</item>
+        <item>Spices</item>
+
+    </string-array>
+
+    <string-array name="fingerlingarray">
+
+
+        <item>Govt</item>
+        <item>Private</item>
+        <item>Own</item>
+
+
+    </string-array>
+
+    <string-array name="arrayloanfor">
+
+        <item>Pond</item>
+        <item>Rearing</item>
+        <item>Other</item>
+
+
+    </string-array>
+
+    <string-array name="arrayloanveterinary">
+
+        <item>Pond</item>
+        <item>Rearing</item>
+        <item>Other</item>
+
+
+    </string-array>
+
+
+    <string-array name="govtschemefishery">
+
+        <item>Fingerlings</item>
+        <item>Ponds</item>
+        <item>Others</item>
+
+    </string-array>
+
+    <string-array name="arrayqualification">
+
+
+        <item>Matriculation</item>
+        <item>+2</item>
+        <item>Graduate</item>
+        <item>Post Graduate</item>
+        <item>Doctorate</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="arrayspecialization">
+
+
+        <item>Mariculation</item>
+        <item>Arts</item>
+        <item>Science</item>
+        <item>Commerce</item>
+        <item>Engineering</item>
+        <item>Medical</item>
+        <item>Law</item>
+        <item>Agriculture</item>
+        <item>Veterinary Science</item>
+        <item>Fishery</item>
+        <item>Horticulture</item>
+        <item>Agricultural Engineering</item>
+        <item>Food Processing</item>
+        <item>Bio Technology</item>
+        <item>Others</item>
+    </string-array>
+    <string name="title_activity_nav_drawer_guest">Guest USer</string>
+    <string name="title_activity_nav_drawer_student_r">Student Researcher</string>
+</resources>

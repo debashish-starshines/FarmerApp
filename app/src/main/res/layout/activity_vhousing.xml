@@ -1,0 +1,290 @@
+<ScrollView android:id="@+id/layout_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/watermark_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        tools:context="ratnatech.farmerapp.Fragment.Ask">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/MyDarkToolbarStyle"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            />
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/subgroup"
+                style="@style/spinner_style"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/veterinaryarray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Ask.."
+                android:gravity="start"
+                android:paddingLeft="5dp"
+                android:background="@drawable/rectangle_border"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shape"
+
+                android:layout_weight="1"
+                android:onClick="onClickSubmit"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:background="@drawable/button_shape"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editqid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:hint="Q_ID"
+
+            />
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Name"
+            android:text="deb"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:text="24"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/responseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/addImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Photo"
+                android:background="@android:color/transparent"
+
+                android:layout_weight="1"
+                android:drawableRight="@drawable/selectpicture"
+                android:onClick="addPhoto"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/camera"
+                android:id="@+id/photo_button"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/uploadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Upload Image"
+                android:textSize="10sp"
+
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:textColor="#fff"
+                android:onClick="uploadIButtonClicked"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#565"
+            android:layout_margin="10dp"
+            />
+
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/addVideoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Video"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/selectvideo"
+                android:layout_weight="1"
+                android:onClick="addVideo"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/videocamera"
+                android:id="@+id/record_video"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/uploadButtonV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Upload Video"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:onClick="uploadVButtonClicked"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#565"
+            />
+
+        <TextView
+            android:id="@+id/txtAudioPath"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Audiopath C:\Users\RatnaDev008\Downloads"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addAudioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Audio"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/selectaudio"
+                android:layout_weight="1"
+
+                android:onClick="addAudio"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/volume"
+                android:id="@+id/record_audio"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/uploadButtonA"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Upload Audio"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:onClick="uploadAButtonClicked"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#565"
+            />
+
+
+        <!--ATTACHING AND UPLOADING-->
+
+
+    </LinearLayout>
+</ScrollView>

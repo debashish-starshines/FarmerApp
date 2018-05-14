@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="Business Type Deals in "
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/watermark_bg"
+
+            >
+
+
+                <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/agriproduct1"
+                    android:textColor="#fff"
+                    android:textAllCaps="true"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:onClick="onClickAgrilProduct"/>
+
+                <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/veterinaryitem1"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:onClick="onClickVeterinary"/>
+                <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/fish"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:onClick="onClickFish"
+
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/others"
+                    android:textColor="#fff"
+                    android:onClick="onClickOthers"
+
+                    android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+            </LinearLayout>

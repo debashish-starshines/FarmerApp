@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:background="@drawable/watermark_bg"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:context="ratnatech.farmerapp.Login">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/MyDarkToolbarStyle"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#c206713c"
+                android:layout_margin="3dp"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:onClick="onClickGovt"
+                android:text="Government"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="3dp"
+                android:textColor="#fff"
+                android:background="#c206713c"
+                android:textAllCaps="false"
+                android:onClick="onClickPrivate"
+                android:text="Private"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#c206713c"
+                android:textColor="#fff"
+                android:layout_margin="3dp"
+                android:textAllCaps="false"
+                android:onClick="onClickNGO"
+                android:text="NGO"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

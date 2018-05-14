@@ -1,0 +1,109 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/watermark_bg"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="Agril Product "
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:orientation="vertical">
+
+                      <Button
+                          android:layout_width="200dp"
+                          android:layout_height="100dp"
+                          android:layout_gravity="center"
+                          android:textAllCaps="true"
+                          android:background="@drawable/seed"
+                          android:textColor="#fff"
+                          android:layout_weight="1"
+                          android:onClick="onClickSeed"/>
+
+                      <Button
+                          android:layout_width="200dp"
+                          android:layout_height="100dp"
+                          android:layout_gravity="center"
+                          android:text="Pesticides"
+
+                          android:layout_weight="1"
+
+                          android:onClick="onClickPesticides"
+                          />
+
+                      <Button
+                          android:layout_width="200dp"
+                          android:layout_height="100dp"
+                          android:layout_gravity="center"
+                          android:background="@drawable/fertiliser"
+                          android:layout_weight="1"
+                          android:onClick="onClickFertilisers"/>
+
+                      <Button
+                          android:layout_width="200dp"
+                          android:layout_height="100dp"
+                          android:layout_gravity="center"
+                          android:background="@drawable/others"
+                          android:layout_weight="1"
+
+                          android:onClick="onClickOther"
+                          />
+
+                      <Button
+                          android:layout_width="200dp"
+                          android:layout_height="100dp"
+                          android:layout_gravity="center"
+                          android:layout_weight="1"
+                        android:text="Agril/Machinery/Tools"
+                          android:onClick="onClickAgrilTool"
+                />
+
+              </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

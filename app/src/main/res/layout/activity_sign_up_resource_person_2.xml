@@ -1,0 +1,1733 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/watermark_bg"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="Sign up as Resource Person"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="STATUS"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/spinnerstatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/spinnerstatus"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/layout_id_status_selfemployed"
+                        android:visibility="gone"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="EXPERTISE-IN"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/spinner_status_selfemployed_expertisein"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/array_status_selfemployed_expertisein"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <!--others please specifylayout-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/pleasespecify"
+                        android:visibility="gone"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/status_others_pleasespecify"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Please Specify.."
+                                android:textStyle="italic"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/rectangle_border"
+                                android:textSize="14sp"/>
+
+                            <!--     <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="1dp"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_marginRight="10dp"
+                                     android:background="#bcbcbc">
+
+                                 </LinearLayout>-->
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/layout_id_status_retired"
+                        android:visibility="gone"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                       <!--     <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="STATUS RETIRED"
+                                android:textSize="12sp"/>-->
+
+                            <EditText
+                                android:id="@+id/jurisdiction_retired"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="Jurisdiction"
+                            android:textStyle="italic"
+                                android:paddingLeft="5dp"
+                            android:background="@drawable/rectangle_border"
+                            android:textSize="14sp"/>
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="DISTRICT"
+                                        android:textSize="12sp"/>
+                                    <Spinner
+                                        android:id="@+id/district"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+
+                                        />
+                                    <!--android:entries="@array/spinnerdistrict"-->
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="#bcbcbc">
+
+                                    </LinearLayout>
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="BLOCK"
+                                        android:textSize="12sp"/>
+                                    <Spinner
+                                        android:id="@+id/block"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+
+                                        />
+                                    <!--android:entries="@array/spinnerblock"-->
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="#bcbcbc"/>
+
+
+
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:text="GP"
+                                            android:textSize="12sp" />
+
+                                        <Spinner
+                                            android:id="@+id/gp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:background="#bcbcbc"/>
+
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="EXPERTISE-IN"
+                                android:layout_marginTop="10dp"
+                                android:textSize="12sp"/>
+
+                            <Spinner
+                                android:id="@+id/spinner_status_retired_expertisein"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/array_status_retired_expertisein"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/layoutgpn"
+                        android:visibility="gone"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="INSERVICE-TYPE"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/spinnergpn"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/gpn"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/layout_id_inservice_private"
+                        android:visibility="gone"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="INSERVICE-PRIVATE"
+                                android:textSize="12sp"/>
+
+                            <EditText
+                                android:id="@+id/inservice_private_institutionname"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp"
+                                android:hint="Institution Name"
+                                android:textStyle="italic"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/rectangle_border"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/jurisdiction_inserviceprivate"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp"
+                                android:hint="Jurisdiction"
+                                android:paddingLeft="5dp"
+                                android:textStyle="italic"
+                                android:background="@drawable/rectangle_border"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/inservice_private_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp"
+                                android:hint="Post"
+                                android:paddingLeft="5dp"
+                                android:textStyle="italic"
+                                android:background="@drawable/rectangle_border"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="DISTRICT"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/district2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerdistrict"-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="BLOCK"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/block2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerblock"-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="GP"
+                                android:textSize="12sp" />
+
+                            <Spinner
+                                android:id="@+id/gp2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="EXPERTISE IN"
+                                android:textSize="12sp"/>
+
+                            <Spinner
+                                android:id="@+id/spinner_expertise_in_private"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:entries="@array/array_expertise_in_private"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/layout_id_govt_type"
+                        android:visibility="gone"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="GOVERNMENT-TYPE"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/spinner_govt_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/array_govt_type"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/layout_id_cent_govt_depart_type"
+                        android:visibility="gone"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txt_id_govt_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CENTRAL-GOVT-DEPARTMENT-TYPE"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/spinner_cent_govt_department_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/array_cent_govt_department_type"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/layout_id_cent_govt_depart_type_agriculture"
+                        android:visibility="gone"
+
+                        >
+                        <!--android:background="#8686"-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="AGRICULTURE POST"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/spinner_cent_govt_department_type_agriculture_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/array_cent_govt_department_type_agriculture_post"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+                             <EditText
+                                 android:id="@+id/jurisdiction_agriculture"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="14dp"
+                                android:hint="Jurisdiction"
+                                 android:textStyle="italic"
+                                 android:paddingLeft="5dp"
+                                android:background="@drawable/rectangle_border"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="EXPERTISE IN"
+                                android:textSize="12sp"/>
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cultivation Practice"
+                                    android:textSize="18sp"/>
+
+                                <Spinner
+                                    android:visibility="gone"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:id="@+id/spinner_id_sub_group_of_cultivation"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:entries="@array/array_sub_group_of_cultivation"/>
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:id="@+id/layout_spinner_horizontal"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#bcbcbc"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButton2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Soil"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButton3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Seed"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:id="@+id/radioButton4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Fertiliser"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:id="@+id/radioButton5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Disease and Pest"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:id="@+id/radioButton6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Irrigation"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:id="@+id/radioButton7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Insurance"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:id="@+id/radioButton8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Training"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:id="@+id/radioButton9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Processing"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:id="@+id/radioButton10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Machinery and Tools"
+                                    android:textSize="18sp"/>
+
+                                <Spinner
+                                    android:visibility="gone"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:id="@+id/spinner_id_sub_group_of_machineryandtools"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:entries="@array/array_sub_group_of_machineryandtools"/>
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:id="@+id/layout_spinner_horizontal_machineryandtools"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#bcbcbc"/>
+                            </RadioGroup>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="DISTRICT"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/district3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerdistrict"-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="BLOCK"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/block3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerblock"-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="GP"
+                                android:textSize="12sp" />
+
+                            <Spinner
+                                android:id="@+id/gp3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/layout_id_cent_govt_depart_type_horticulture"
+                        android:visibility="gone"
+
+                        >
+                        <!--android:background="#8686"-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="HORTICULTURE POST"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/spinner_cent_govt_department_type_horticulture_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/array_cent_govt_department_type_horticulture_post"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+                            <EditText
+                                android:id="@+id/jurisdiction_horticulture"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="14dp"
+                                android:hint="Jurisdiction"
+                                android:textStyle="italic"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/rectangle_border"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="EXPERTISE IN"
+                                android:textSize="12sp"/>
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonMushroom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mushroom"
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFloriculture"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Floriculture"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonVegetable"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vegetable"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:id="@+id/radioButtonFruits"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Fruits"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:id="@+id/radioButtonOthers"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Others"
+                                    android:textSize="18sp"/>
+
+                            </RadioGroup>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="DISTRICT"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/district4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerdistrict"-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="BLOCK"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/block4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerblock"-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="GP"
+                                android:textSize="12sp" />
+
+                            <Spinner
+                                android:id="@+id/gp4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/layout_id_cent_govt_depart_type_soilconservation"
+                        android:visibility="gone"
+
+                        >
+                        <!--android:background="#8686"-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="SOIL CONSERVATION POST"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/spinner_cent_govt_department_type_soilconservation_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/array_cent_govt_department_type_soilconservation_post"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+                            <EditText
+                                android:id="@+id/jurisdiction_soilconservation"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="14dp"
+                                android:hint="Jurisdiction"
+                                android:textStyle="italic"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/rectangle_border"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="EXPERTISE IN"
+                                android:textSize="12sp"/>
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonCheckDam"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Check Dam"
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFieldBunding"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Field Bunding"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonWHS"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="WHS"
+                                    android:textSize="18sp"/>
+
+
+                            </RadioGroup>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="DISTRICT"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/district5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerdistrict"-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="BLOCK"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/block5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerblock"-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="GP"
+                                android:textSize="12sp" />
+
+                            <Spinner
+                                android:id="@+id/gp5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/layout_id_cent_govt_depart_type_animalresources"
+                        android:visibility="gone"
+
+                        >
+                        <!--android:background="#8686"-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ANIMAL RESOURCES POST"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/spinner_cent_govt_department_type_animalresources_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/array_cent_govt_department_type_animalresources_post"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+                            <EditText
+                                android:id="@+id/jurisdiction_animalresources"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="14dp"
+                                android:hint="Jurisdiction"
+                                android:textStyle="italic"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/rectangle_border"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="EXPERTISE IN"
+                                android:textSize="12sp"/>
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonCultivationPractice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cultivation Practice"
+                                    android:textSize="18sp"/>
+
+                                <Spinner
+
+                                    android:id="@+id/spinner_cent_govt_department_type_soilconservation_expertisein_post_cultivationpractice_subgroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_animalresources_subgroup"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#bcbcbc"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonBreed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Breed"
+                                    android:textSize="18sp"/>
+
+                                <Spinner
+
+                                    android:id="@+id/spinner_cent_govt_department_type_soilconservation_expertisein_post_breed_subgroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_animalresources_subgroup"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#bcbcbc"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFeed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Feed"
+                                    android:textSize="18sp"/>
+
+                                <Spinner
+
+                                    android:id="@+id/spinner_cent_govt_department_type_soilconservation_expertisein_post_feed_subgroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_animalresources_subgroup"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#bcbcbc"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonDisease"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Disease"
+                                    android:textSize="18sp"/>
+
+                                <Spinner
+
+                                    android:id="@+id/spinner_cent_govt_department_type_soilconservation_expertisein_post_disease_subgroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_animalresources_subgroup"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#bcbcbc"/>
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonHousing"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Housing"
+                                    android:textSize="18sp"/>
+
+                                <Spinner
+
+                                    android:id="@+id/spinner_cent_govt_department_type_soilconservation_expertisein_post_housing_subgroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_animalresources_subgroup"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#bcbcbc"/>
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonTraining"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Training"
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonInsurance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Insurance"
+                                    android:textSize="18sp"/>
+
+
+                            </RadioGroup>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="DISTRICT"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/district6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerdistrict"-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="BLOCK"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/block6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerblock"-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="GP"
+                                android:textSize="12sp" />
+
+                            <Spinner
+                                android:id="@+id/gp6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/layout_id_cent_govt_depart_type_fishery"
+                        android:visibility="gone"
+
+                        >
+                        <!--android:background="#8686"-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="FISHERY POST"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/spinner_cent_govt_department_type_fishery_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/array_cent_govt_department_type_fishery_post"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+                            <EditText
+                                android:id="@+id/jurisdiction_fishery"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="14dp"
+                                android:hint="Jurisdiction"
+                                android:paddingLeft="5dp"
+                                android:textStyle="italic"
+                                android:background="@drawable/rectangle_border"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="EXPERTISE IN"
+                                android:textSize="12sp"/>
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFisheryCultivationPractice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cultivation Practice"
+                                    android:textSize="18sp"/>
+
+                                <Spinner
+
+                                    android:id="@+id/spinner_cent_govt_department_type_fishery_expertisein_post_cultivationpractice_subgroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_cent_govt_department_type_fishery_expertisein_all_subgroup"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#bcbcbc"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFisheryFeed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Feed"
+                                    android:textSize="18sp"/>
+
+                                <Spinner
+
+                                    android:id="@+id/spinner_cent_govt_department_type_fishery_expertisein_post_feed_subgroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_cent_govt_department_type_fishery_expertisein_all_subgroup"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#bcbcbc"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFisheryDisease"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Disease"
+                                    android:textSize="18sp"/>
+
+                                <Spinner
+
+                                    android:id="@+id/spinner_cent_govt_department_type_fishery_expertisein_post_disease_subgroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_cent_govt_department_type_fishery_expertisein_all_subgroup"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#bcbcbc"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFisheryProcessing"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Processing"
+                                    android:textSize="18sp"/>
+
+                                <Spinner
+
+                                    android:id="@+id/spinner_cent_govt_department_type_fishery_expertisein_post_processing_subgroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_cent_govt_department_type_fishery_expertisein_all_subgroup"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#bcbcbc"/>
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFisheryTraining"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Training"
+                                    android:textSize="18sp"/>
+
+
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFisheryInsurance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Insurance"
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFisheryPondManagement"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pond Management"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFisheryOthers"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Others"
+                                    android:textSize="18sp"/>
+
+
+                            </RadioGroup>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="DISTRICT"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/district7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerdistrict"-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc">
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="BLOCK"
+                                android:textSize="12sp"/>
+                            <Spinner
+                                android:id="@+id/block7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+                            <!--android:entries="@array/spinnerblock"-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="GP"
+                                android:textSize="12sp" />
+
+                            <Spinner
+                                android:id="@+id/gp7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#bcbcbc"/>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:text="SUBMIT"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:onClick="onClickSubmit"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

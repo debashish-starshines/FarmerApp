@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/qna"
+            android:icon="@drawable/question"
+            android:title="Q and A" />
+
+        <item
+            android:id="@+id/forum"
+            android:icon="@drawable/forum"
+            android:title="Open Forum" />
+        <item
+            android:id="@+id/ibuyer"
+            android:icon="@drawable/question"
+            android:title="Interested Buyer" />
+
+        <item
+            android:id="@+id/repairservice"
+            android:icon="@drawable/question"
+            android:title="Repair and Sevice Need" />
+        <item
+            android:id="@+id/message"
+            android:icon="@drawable/message"
+            android:title="Message" />
+        <item
+            android:id="@+id/survey"
+            android:icon="@android:drawable/ic_input_get"
+            android:title="Conduct Survey" />
+
+        <item
+            android:id="@+id/getreport"
+            android:icon="@android:drawable/ic_input_get"
+            android:title="Get Report" />
+
+        <item
+            android:id="@+id/productpromotion"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Product Promotion" />
+        <item
+            android:id="@+id/stockposition"
+            android:icon="@android:drawable/ic_input_get"
+            android:title="Stock Position" />
+        <item
+            android:id="@+id/payment"
+            android:icon="@drawable/my_activities"
+            android:title="Payment(to Web Admin)" />
+
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/my_activities"
+            android:title="Contact us" />
+
+        <item
+            android:id="@+id/knowledgebank"
+            android:icon="@drawable/my_activities"
+            android:title="Knowledge Bank" />
+    </group>
+
+
+
+</menu>
